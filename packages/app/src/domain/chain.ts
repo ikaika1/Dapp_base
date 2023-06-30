@@ -25,3 +25,31 @@ export const taiko = {
   },
   testnet: true,
 } as const satisfies Chain;
+
+
+
+export const scroll = {
+  id: 534353,
+  name: "Scloll",
+  network: "Scroll Testnet",
+  nativeCurrency: {
+    name: "Ether",
+    symbol: "ETH",
+    decimals: 18,
+  },
+  rpcUrls: {
+    public: {
+      http: ["https://alpha-rpc.scroll.io/l2"],
+    },
+    default: {
+      http: ["https://alpha-rpc.scroll.io/l2"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "blockscout",
+      url: "https://blockscout.scroll.io/",
+    },
+  },
+  testnet: true,
+} as const satisfies Chain;
