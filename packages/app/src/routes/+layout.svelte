@@ -1,6 +1,6 @@
 <script lang="ts">
   import "@picocss/pico/css/pico.min.css";
-  import { taiko } from "../domain/chain";
+  import { taiko, scroll} from "../domain/chain";
   import { baseGoerli, foundry, sepolia } from "viem/chains";
   import { ethereumClient, sepoliaClient, web3Modal } from "../stores";
   import { configureChains, createConfig } from "@wagmi/core";
@@ -10,7 +10,7 @@
   import { createPublicClient, http } from "viem";
 
   const projectId = import.meta.env.VITE_WEB3MODAL_PROJECT_ID;
-  const chains = [baseGoerli, foundry, sepolia, taiko];
+  const chains = [baseGoerli, foundry, sepolia, taiko, scroll];
 
   onMount(async () => {
     const { publicClient } = configureChains(chains, [w3mProvider({ projectId })]);

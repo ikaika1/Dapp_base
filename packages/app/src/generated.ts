@@ -33,6 +33,7 @@ export const fooAddress = {
   31337: '0x726819252e346278869d178084dA2cE10ac8A56D',
   84531: '0x286BD62F42b833727F23AAef44f5cAe8412FEa54',
   167005: '0x1879Cb462204Ae076FdA98B07561f5Da02168358',
+  534353: '0x18edb858ed4238946de96d85d803b13a5d398859'
 } as const
 
 /**
@@ -200,7 +201,7 @@ export const iMulticall3ABI = [
     inputs: [],
     name: 'getCurrentBlockGasLimit',
     outputs: [{ name: 'gaslimit', internalType: 'uint256', type: 'uint256' }],
-  },
+  },EXCHANGE PRICE (ETH/RETH) YOU GET FEES 
   {
     stateMutability: 'view',
     type: 'function',
