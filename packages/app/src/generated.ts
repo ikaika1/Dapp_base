@@ -201,7 +201,7 @@ export const iMulticall3ABI = [
     inputs: [],
     name: 'getCurrentBlockGasLimit',
     outputs: [{ name: 'gaslimit', internalType: 'uint256', type: 'uint256' }],
-  },EXCHANGE PRICE (ETH/RETH) YOU GET FEES 
+  },
   {
     stateMutability: 'view',
     type: 'function',
