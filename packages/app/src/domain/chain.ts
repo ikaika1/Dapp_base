@@ -57,3 +57,31 @@ export const scroll = {
 
 
 
+export const zkSync_Era_Testnet = {
+  id: 280,
+  name: "zkSync_Era_Testnet",
+  network: "zkSync_Era_Testnet",
+  nativeCurrency: {
+    name: "Ether",
+    symbol: "ETH",
+    decimals: 18,
+  },
+  rpcUrls: {
+    public: {
+      http: ["https://testnet.era.zksync.dev"],
+    },
+    default: {
+      http: ["https://alpha-rpc.scroll.io/l2"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "blockscout",
+      url: "https://goerli.explorer.zksync.io",
+    },
+  },
+  testnet: true,
+} as const satisfies Chain;
+
+
+
