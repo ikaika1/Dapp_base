@@ -30,7 +30,7 @@ export const taiko = {
 
 export const scroll = {
   id: 534353,
-  name: "Scloll",
+  name: "Scroll",
   network: "Scroll Testnet",
   nativeCurrency: {
     name: "Ether",
