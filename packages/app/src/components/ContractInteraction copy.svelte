@@ -2,7 +2,7 @@
   import { readContract, prepareWriteContract, writeContract } from "@wagmi/core";
   import { fooABI, fooAddress } from "../generated";
   import { foundry, baseGoerli } from "viem/chains";
-  import { taiko, base} from "../domain/chain";
+  import { taiko } from "../domain/chain";
   import { ethereumClient } from "../stores";
 
   let inputMessage = "";
@@ -13,7 +13,7 @@
     const chainId = $ethereumClient.getNetwork().chain?.id ?? foundry.id;
 
     const data = await readContract({
-      address: fooAddress[(chainId as 31337) || 8453 || 167005],
+      address: fooAddress[(chainId as 31337) || 84531 || 167005],
       abi: fooABI,
       functionName: "myString",
     });
@@ -25,7 +25,7 @@
     const chainId = $ethereumClient.getNetwork().chain?.id ?? foundry.id;
 
     const config = await prepareWriteContract({
-      address: fooAddress[(chainId as 31337) || 8453 || 167005],
+      address: fooAddress[(chainId as 31337) || 84531 || 167005],
       abi: fooABI,
       functionName: "setMyString",
       args: [inputMessage],
