@@ -56,6 +56,32 @@ export const scroll = {
 
 
 
+export const base = {
+  id: 8453,
+  name: "Base",
+  network: "Base mainnet",
+  nativeCurrency: {
+    name: "Ether",
+    symbol: "ETH",
+    decimals: 18,
+  },
+  rpcUrls: {
+    public: {
+      http: ["https://developer-access-mainnet.base.org"],
+    },
+    default: {
+      http: ["https://developer-access-mainnet.base.org"],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: "blockscout",
+      url: "https://basescan.org",
+    },
+  },
+  testnet: true,
+} as const satisfies Chain;
+
 
 export const zkSync_Era_Testnet = {
   id: 280,
@@ -71,7 +97,7 @@ export const zkSync_Era_Testnet = {
       http: ["https://testnet.era.zksync.dev"],
     },
     default: {
-      http: ["https://alpha-rpc.scroll.io/l2"],
+      http: ["https://testnet.era.zksync.dev"],
     },
   },
   blockExplorers: {
