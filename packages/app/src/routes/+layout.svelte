@@ -21,7 +21,7 @@
     });
 
     $ethereumClient = new EthereumClient(wagmiConfig, chains);
-    $web3Modal = new Web3Modal({ projectId, defaultChain: sepolia }, $ethereumClient);
+    $web3Modal = new Web3Modal({ projectId, defaultChain: base }, $ethereumClient);
 
     // initialize viem clients
     $sepoliaClient = createPublicClient({
