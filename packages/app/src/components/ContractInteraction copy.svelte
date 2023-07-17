@@ -2,7 +2,7 @@
   import { readContract, prepareWriteContract, writeContract } from "@wagmi/core";
   import { fooABI, fooAddress } from "../generated";
   import { foundry, baseGoerli } from "viem/chains";
-  import { taiko } from "../domain/chain";
+  import { taiko, base} from "../domain/chain";
   import { ethereumClient } from "../stores";
 
   let inputMessage = "";
